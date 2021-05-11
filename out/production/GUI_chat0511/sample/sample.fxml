@@ -6,24 +6,30 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <VBox prefWidth="125">
-      <TextArea fx:id="textAreaUserList" editable="false" prefHeight="300" style="-fx-border-color: red;" />
+      <TextArea fx:id="textAreaUserList" editable="false" prefHeight="300"  />
    </VBox>
    <VBox prefHeight="300.0" prefWidth="275.0">
       <children>
-         <Button onAction="#connect" prefHeight="30" prefWidth="Infinity" text="Подключиться" />
-         <TextArea fx:id="textArea" editable="false" prefHeight="240.0" prefWidth="275.0">
+         <Button onAction="#connect" prefHeight="30" prefWidth="Infinity" style="-fx-background-color: #66CDAA;" text="Подключиться" textFill="#1b6538">
             <font>
-               <Font size="18.0" />
+               <Font name="Comic Sans MS Bold" size="14.0" />
+            </font></Button>
+         <TextArea fx:id="textArea" editable="false" prefHeight="240.0" prefWidth="275.0" style="-fx-background-color:#7FFFD4;">
+            <font>
+               <Font size="14.0" />
             </font>
          </TextArea>
          <HBox prefHeight="30.0" prefWidth="275.0">
             <children>
-               <TextField fx:id="textField" onAction="#onSubmit" prefHeight="30.0" prefWidth="200">
+               <TextField fx:id="textField" onAction="#onSubmit" prefHeight="30.0" prefWidth="200" style="-fx-background-color:#FFE4C4;">
                   <font>
-                     <Font size="14.0" />
+                     <Font name="System Italic" size="14.0" />
                   </font>
                </TextField>
-               <Button mnemonicParsing="false" onAction="#onSubmit" prefHeight="30.0" prefWidth="75" text="Отправить" />
+               <Button mnemonicParsing="false" onAction="#onSubmit" prefHeight="30.0" prefWidth="75" style="-fx-background-color: #F0E68C;" text="Отправить" textFill="#655807">
+                  <font>
+                     <Font name="Comic Sans MS Bold" size="10.0" />
+                  </font></Button>
             </children>
          </HBox>
       </children>
